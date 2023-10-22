@@ -3,18 +3,18 @@ package child;
 import access.ClassA;
 import parent.Parent;
 
-public class Child extends Parent {
+public class ChildDemo extends Parent {
 
-    public Child() {
+    public ChildDemo() {
     }
 
-    public Child(String name) {
+    public ChildDemo(String name) {
         super(name);
     }
 
     public static void main(String[] args) {
-        Child child = new Child();
-        System.out.println(child.name);
+        ChildDemo childDemo = new ChildDemo();
+        System.out.println(childDemo.name);
         Parent parent = new Parent();
         System.out.println(parent);
 

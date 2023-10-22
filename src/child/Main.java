@@ -4,10 +4,10 @@ import parent.Parent;
 
 public class Main {
     public static void main(String[] args) {
-        Parent parent = new Child("Bob");
+        Parent parent = new ChildDemo("Bob");
 //        System.out.println(parent.name);
-        Child child = (Child) parent;
+        ChildDemo childDemo = (ChildDemo) parent;
 //        System.out.println(child.name);
-        System.out.println(child.getName());
+        System.out.println(childDemo.getName());
     }
 }

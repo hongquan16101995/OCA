@@ -1,12 +1,12 @@
 package parent;
 
-import child.Child;
+import child.ChildDemo;
 
 public class Main {
     public static void main(String[] args) {
-        Parent parent = new Child("Bob");
+        Parent parent = new ChildDemo("Bob");
         System.out.println(parent.name);
-        Child child = (Child) parent;
-        System.out.println(child.name);
+        ChildDemo childDemo = (ChildDemo) parent;
+        System.out.println(childDemo.name);
     }
 }
