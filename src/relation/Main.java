@@ -1,7 +1,10 @@
 package relation;
 
+import java.io.FileNotFoundException;
+import java.io.IOException;
+
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         Child child = new Child();
         child.m1();
         child.m2();
@@ -20,5 +23,8 @@ public class Main {
         Parent parent1 = new Parent();
         Child child2 = (Child) parent1;
         child2.mChild();
+
+        child2.m4();
+        parent1.m4();
     }
 }
